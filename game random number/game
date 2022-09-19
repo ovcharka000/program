@@ -1,0 +1,21 @@
+print ('Hello World')
+import random
+secret=random.randint(1,101)
+status=-2 #-2 начало, -1 меньше, 1 больше, 0 угадал
+count=0
+
+while (status!=0) and (count<=7):
+    x=int(input("введите число: "))
+    count=count+1 
+    if x<secret :
+        status=-1
+        print("меньше")
+    if x>secret :
+        status=1
+        print("больше") 
+    if x==secret :
+        status==0
+        print("угадал")  
+            
+if count>7:
+    print("вы исчерпали количество попыток!")
