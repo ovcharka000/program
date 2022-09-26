@@ -1,0 +1,15 @@
+var=['s','p','i','s','o']
+var.append('k')
+print(var)
+
+var=['s','p','i','s','o','k']
+var.extend(['s','p','i','s','o','k'])
+print(var)
+
+var=['s','p','i','s','o','k']
+var.insert(3,'d')
+print(var)
+
+var=['s','p','i','s','o','k']
+var.remove('s')
+print(var)
